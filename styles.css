@@ -431,6 +431,37 @@ a { color: inherit; text-decoration: none; }
   max-width: 52ch;
 }
 
+/* ---------- Interests ---------- */
+.interests-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px 32px;
+}
+.interests-highlights {
+  list-style: none;
+  margin: 40px 0 0;
+  padding: 28px 0 0;
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 14px;
+  max-width: 68ch;
+}
+.interests-highlights li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 0.96rem;
+  color: var(--ink-soft);
+}
+.interests-highlights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
 /* ---------- Pull quote ---------- */
 .pull-quote {
   padding: clamp(56px, 9vw, 96px) 0;
